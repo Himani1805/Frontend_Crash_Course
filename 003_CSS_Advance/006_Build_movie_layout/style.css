@@ -1,0 +1,27 @@
+.wrapper{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;  
+}
+.movieLayout{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    border: 1px solid #EAEAEA;  
+}
+.blue{
+    background-color:#93D0F5;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+    border: none;
+    color: black;  
+}
+.wrapText h2{
+    font-weight:bolder;
+
+}
