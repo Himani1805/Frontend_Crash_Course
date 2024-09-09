@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    text-align: center;
+    padding: 30px;
+    background-color: #333333;
+    color: #00BCD4;
+}
+#navBar{
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    background-color: #444444;
+    padding: 20px;
+}
+#navBar li{
+    list-style-type: none;
+}
+#navBar li a{
+    text-decoration: none;
+    color: white;
+}
+#main{
+    width: 100%;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#main div{
+    display: flex;
+}
+#home, #education, #projects, #skills, #contact {
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 20px;
+    padding: 40px;
+    border: solid 2px rgb(225, 207, 207);
+    border-radius: 10px;
+    background-color: white;
+    line-height: 40px;
+    box-sizing: border-box;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.imgLogo {
+    width: 50%;
+}
+
+.green h2 {
+    color: #4CAF50;
+}
+
+.pink h2 {
+    color: #E92769;
+}
+
+.yellow h2 {
+    color: #FFC107;
+}
+
+.purple h2 {
+    color: #9C27B0;
+}
+
+.blue h2 {
+    color: #2196F3;
+}
+
+/* Media query for large screens */
+@media screen and (min-width: 1024px) {
+    #navBar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    #main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #main div {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .imgLogo {
+        width: 30%;
+    }
+
+    .content {
+        width: 70%;
+        text-align: left;
+    }
+}
+
+/* Media query for medium and small screens */
+@media screen and (max-width: 1023px) {
+    #navBar {
+        display: none;
+    }
+
+    #main {
+        flex-direction: column;
+    }
+
+    #main div {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .imgLogo {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    /* Navbar for small screens as a select dropdown */
+    select#navSelect {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        background-color: #444444;
+        color: white;
+    }
+
+    /* Reduce image size and font size for smaller screens */
+    #main div img {
+        width: 50%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

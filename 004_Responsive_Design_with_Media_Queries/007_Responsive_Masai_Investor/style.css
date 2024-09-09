@@ -1,0 +1,62 @@
+h1{
+    text-align: center;
+    font-family: sans-serif;
+}
+.boardMembers{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boardMembers img{
+    width: 25%;
+}
+h2{
+    text-align: center;
+    font-family: sans-serif;
+}
+.main{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    gap: 20px;  
+}
+
+.cards{
+    
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.invest{
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+    
+}
+.cards h2{
+    font-family: sans-serif;
+}
+.cards p{
+    color: gray;
+}
+.cards .pay{
+    width: 50%;
+}
+
+    
+@media only screen and (max-width: 600px){
+
+    .boardMembers{
+        flex-direction: column;
+    }
+    .main{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+
+}
+
